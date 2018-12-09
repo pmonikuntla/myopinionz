@@ -35,10 +35,10 @@
             </objects>
             <point key="canvasLocation" x="105" y="627"/>
         </scene>
-        <!--Optons To Login View Controller-->
+        <!--Options To Login View Controller-->
         <scene sceneID="gW6-Rj-wHy">
             <objects>
-                <viewController storyboardIdentifier="OptonsToLoginViewController" id="F1G-MT-QOV" customClass="OptonsToLoginViewController" customModule="myopinionz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OptionsToLoginViewController" id="F1G-MT-QOV" customClass="OptionsToLoginViewController" customModule="myopinionz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uDw-2K-lD6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,10 +116,6 @@
                         <viewLayoutGuide key="safeArea" id="Nz3-aP-p4V"/>
                     </view>
                     <navigationItem key="navigationItem" id="s0S-NQ-UnS"/>
-                    <connections>
-                        <outlet property="orLabel" destination="3R7-Ky-ODh" id="erB-Ky-jYD"/>
-                        <outlet property="signUpBtn" destination="HiI-4v-9Wv" id="cZd-dO-edb"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yxW-fg-Kra" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
