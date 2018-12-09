@@ -14,6 +14,10 @@
 		896B71FF21B4883B007ABD34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896B71FD21B4883B007ABD34 /* LaunchScreen.storyboard */; };
 		896B720A21B4883B007ABD34 /* myopinionzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896B720921B4883B007ABD34 /* myopinionzTests.swift */; };
 		896B721521B4883B007ABD34 /* myopinionzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896B721421B4883B007ABD34 /* myopinionzUITests.swift */; };
+		896B722421B48979007ABD34 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896B722321B48979007ABD34 /* SplashViewController.swift */; };
+		896B722721B48B1D007ABD34 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896B722621B48B1D007ABD34 /* LoginViewController.swift */; };
+		896B723021B4CBEA007ABD34 /* StepsToLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896B722F21B4CBEA007ABD34 /* StepsToLoginViewModel.swift */; };
+		89A22D4C21B76670001DE8EB /* OptonsToLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A22D4B21B76670001DE8EB /* OptonsToLoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		896B721021B4883B007ABD34 /* myopinionzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myopinionzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		896B721421B4883B007ABD34 /* myopinionzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myopinionzUITests.swift; sourceTree = "<group>"; };
 		896B721621B4883B007ABD34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		896B722321B48979007ABD34 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		896B722621B48B1D007ABD34 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		896B722F21B4CBEA007ABD34 /* StepsToLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsToLoginViewModel.swift; sourceTree = "<group>"; };
+		89A22D4B21B76670001DE8EB /* OptonsToLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptonsToLoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				896B71F321B4883A007ABD34 /* myopinionz */,
-				896B720821B4883B007ABD34 /* myopinionzTests */,
 				896B721321B4883B007ABD34 /* myopinionzUITests */,
 				896B71F221B4883A007ABD34 /* Products */,
 			);
@@ -97,11 +104,9 @@
 		896B71F321B4883A007ABD34 /* myopinionz */ = {
 			isa = PBXGroup;
 			children = (
-				896B71F421B4883A007ABD34 /* AppDelegate.swift */,
-				896B71F621B4883A007ABD34 /* ViewController.swift */,
-				896B71F821B4883A007ABD34 /* Main.storyboard */,
+				896B722821B49EBE007ABD34 /* ui */,
 				896B71FB21B4883B007ABD34 /* Assets.xcassets */,
-				896B71FD21B4883B007ABD34 /* LaunchScreen.storyboard */,
+				896B720821B4883B007ABD34 /* myopinionzTests */,
 				896B720021B4883B007ABD34 /* Info.plist */,
 			);
 			path = myopinionz;
@@ -123,6 +128,69 @@
 				896B721621B4883B007ABD34 /* Info.plist */,
 			);
 			path = myopinionzUITests;
+			sourceTree = "<group>";
+		};
+		896B722221B48955007ABD34 /* splash */ = {
+			isa = PBXGroup;
+			children = (
+				896B722321B48979007ABD34 /* SplashViewController.swift */,
+			);
+			path = splash;
+			sourceTree = "<group>";
+		};
+		896B722521B48AF8007ABD34 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				896B722621B48B1D007ABD34 /* LoginViewController.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		896B722821B49EBE007ABD34 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				896B722B21B4C955007ABD34 /* viewmodel */,
+				896B722A21B4C94F007ABD34 /* model */,
+				896B722921B4C91D007ABD34 /* view */,
+				896B71FD21B4883B007ABD34 /* LaunchScreen.storyboard */,
+				896B71F821B4883A007ABD34 /* Main.storyboard */,
+				896B71F421B4883A007ABD34 /* AppDelegate.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		896B722921B4C91D007ABD34 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				89A22D4A21B76655001DE8EB /* optionstologin */,
+				896B722521B48AF8007ABD34 /* login */,
+				896B722221B48955007ABD34 /* splash */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		896B722A21B4C94F007ABD34 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				896B71F621B4883A007ABD34 /* ViewController.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		896B722B21B4C955007ABD34 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				896B722F21B4CBEA007ABD34 /* StepsToLoginViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		89A22D4A21B76655001DE8EB /* optionstologin */ = {
+			isa = PBXGroup;
+			children = (
+				89A22D4B21B76670001DE8EB /* OptonsToLoginViewController.swift */,
+			);
+			path = optionstologin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +324,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89A22D4C21B76670001DE8EB /* OptonsToLoginViewController.swift in Sources */,
+				896B722721B48B1D007ABD34 /* LoginViewController.swift in Sources */,
+				896B722421B48979007ABD34 /* SplashViewController.swift in Sources */,
 				896B71F721B4883A007ABD34 /* ViewController.swift in Sources */,
+				896B723021B4CBEA007ABD34 /* StepsToLoginViewModel.swift in Sources */,
 				896B71F521B4883A007ABD34 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +505,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66Y7M6NYAU;
 				INFOPLIST_FILE = myopinionz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +523,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66Y7M6NYAU;
 				INFOPLIST_FILE = myopinionz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
