@@ -12,7 +12,9 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let logo = UIImage(named: "logo-small-clear.png")
+        let imageView = UIImageView(image:logo)
+        self.navigationItem.titleView = imageView
         // Do any additional setup after loading the view.
     }
     
